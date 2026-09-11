@@ -1,0 +1,52 @@
+/* Customizações além do Pico.css */
+body {
+    padding-top: 2rem;
+}
+
+.busca-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#botao-buscar {
+    width: auto;
+}
+
+.resultado-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo do cartão de país */
+.card-pais {
+    background: #fbfbfb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-pais img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+}
+
+.card-pais h2 {
+    margin-bottom: 0.5rem;
+}
+
+.erro {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+    background: #fdf2f2;
+    border-radius: 8px;
+    width: 100%;
+}
