@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorador de Países</title>
-    <!-- Adicionando o Pico.css para um estilo base bonito -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorador de Países com Favoritos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="container">
-        <header>
-            <hgroup>
-                <h1>Explorador de Países 🌍</h1>
-                <h2>Descubra informações sobre qualquer país do mundo</h2>
-            </hgroup>
-        </header>
+  <div class="container">
+    <header>
+      <h1>🌍 Explorador de Países</h1>
+      <p>Pesquise países e guarde os seus favoritos no banco de dados.</p>
+    </header>
+    
+    <main>
+      <div class="busca-area">
+        <input type="text" id="campo-busca" placeholder="Ex: Brazil, Japan, France...">
+        <button id="botao-buscar">Buscar</button>
+      </div>
 
-        <section class="busca-container">
-            <input type="text" id="campo-busca" placeholder="Digite o nome do país em inglês (ex: Brazil, Japan)...">
-            <button id="botao-buscar">Buscar</button>
-        </section>
+      <div id="resultado" class="resultado-area"></div>
 
-        <!-- Aqui é onde os resultados ou erros vão aparecer -->
-        <section id="resultado" class="resultado-container">
-            <!-- Vazio inicialmente -->
-        </section>
+      <hr class="divisor">
+
+      <section class="favoritos-secao">
+        <h2>⭐ Os Meus Países Favoritos</h2>
+        <ul id="lista-favoritos" class="lista-favoritos"></ul>
+      </section>
     </main>
+  </div>
 
-    <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
